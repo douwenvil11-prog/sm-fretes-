@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Fretes | Transportes e Pequenos Fretes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #F4F4F4;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #D32F2F; /* Vermelho da marca */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid #FFC107; /* Amarelo da marca */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .logo-text span {
+            color: #FFC107; /* Amarelo */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            /* Imagem de caminhão/fundo industrial */
+            background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.9)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #ddd;
+            font-weight: 400;
+        }
+
+        .btn-orcamento {
+            display: inline-block;
+            background-color: #FFC107; /* Amarelo */
+            color: #D32F2F; /* Texto vermelho */
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+        }
+
+        .btn-orcamento:hover {
+            transform: scale(1.05);
+        }
+
+        /* Barra de Atendimento */
+        .info-bar {
+            background-color: #212121; /* Cinza escuro */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* Seção de Serviços */
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            color: #D32F2F;
+            margin: 50px 0 30px 0;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .servicos-container {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .servico-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #D32F2F;
+        }
+
+        .servico-card h3 {
+            color: #D32F2F;
+            font-size: 18px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .servico-card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* Seção de Cobertura */
+        .cobertura {
+            background-color: #D32F2F;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        .cobertura h2 {
+            color: #FFC107;
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #212121;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">SM <span>Fretes</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Transportes e Pequenos Fretes com Segurança</h1>
+        <p>Atendemos toda a região do Paraná, Santa Catarina e Rio Grande do Sul. Faça sua cotação agora!</p>
+        
+        <!-- Link do WhatsApp principal (Marlene) -->
+        <a href="https://wa.me/5545999566712" class="btn-orcamento" target="_blank">Fazer Cotação no WhatsApp</a>
+    </section>
+
+    <div class="info-bar">
+        🚚 Mudanças, entregas e fretes rápidos. Aceitamos Cartões e Pix.
+    </div>
+
+    <h2 class="section-title">Nossos Serviços</h2>
+    
+    <section class="servicos-container">
+        <div class="servico-card">
+            <h3>📦 Pequenos Fretes</h3>
+            <p>Transporte ágil para móveis, eletrodomésticos e pequenas cargas com total cuidado.</p>
+        </div>
+
+        <div class="servico-card">
+            <h3>🚚 Transportes Regionais</h3>
+            <p>Logística completa entre PR, SC e RS. Sua mercadoria entregue no prazo e com segurança.</p>
+        </div>
+        
+        <div class="servico-card">
+            <h3>🏠 Mudanças Residenciais</h3>
+            <p>Equipe preparada para carregar e descarregar seus móveis sem arranhões e com agilidade.</p>
+        </div>
+    </section>
+
+    <section class="cobertura">
+        <h2>Área de Atendimento</h2>
+        <p>Atendemos todo o Paraná, Santa Catarina e Rio Grande do Sul.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SM Fretes. Todos os direitos reservados.</p>
+        <p>📞 Contatos: (45) 99956-6712 (Marlene) | (45) 99832-0890 (Samuel)</p>
+    </footer>
+
+</body>
+</html>
